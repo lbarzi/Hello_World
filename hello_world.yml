@@ -1,0 +1,22 @@
+- name: Configure application
+  hosts: all
+  become: true
+  become_method: sudo
+  vars:
+      repository_url: git@github.com:lbarzi/Hello_World.git
+      repository_path: /home/vagrant/
+      hello-world
+
+  tasks:
+    - name: Install packages
+      apt: update_cache=yes name={{ item }} state=present
+      with_items:
+        - git
+        - python-pip
+        - nginx
+
+    - name: Clone repository
+      git: repo='{{ repository_url }}' dest='{{ repository_path }}'
+
+    - name: Install requirements
+      pip: requirements='{{ repository_path }}/requirements.txt'
