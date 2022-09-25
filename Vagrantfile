@@ -21,4 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision:shell, path: "bootstrap.sh"
     config.vm.provision "file", source: "~/.ssh/id_ed25519.pub", destination: "~/.ssh/id_ed25519.pub"
     config.vm.provision "file", source: "~/.ssh/id_ed25519", destination: "~/.ssh/id_ed25519"
+    config.vm.provision 'ansible' do |ansible|
+      ansible.playbook = 'hello_world.yml'
+      ansible.verbose = 'v'
 end
