@@ -12,7 +12,7 @@
       apt: update_cache=yes name={{ item }} state=present
       with_items:
         - git
-        - python-pip
+        - python3-pip
         - nginx
 
     - name: Clone repository
