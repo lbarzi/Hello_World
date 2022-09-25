@@ -4,8 +4,7 @@
   become_method: sudo
   vars:
       repository_url: git@github.com:lbarzi/Hello_World.git
-      repository_path: /home/vagrant/
-      hello-world
+      repository_path: /home/vagrant/Hello_World
 
   tasks:
     - name: Install packages
@@ -16,7 +15,11 @@
         - nginx
 
     - name: Clone repository
-      git: repo='{{ repository_url }}' dest='{{ repository_path }}'
+      git:
+        repo: "git@github.com:lbarzi/Hello_World.git"
+        dest: /home/vagrant/Hello_World
+        key_file: /home/vagrant/.ssh/id_ed25519
+        accept_hostkey: yes
 
     - name: Install requirements
       pip: requirements='{{ repository_path }}/requirements.txt'
