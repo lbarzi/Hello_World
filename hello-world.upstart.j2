@@ -1,11 +1,5 @@
-description "hello-world"
+#!/bin/bash
 
-start on (filesystem)
-stop on runlevel [016]
+cd /home/vagrant/Hello_World
 
-respawn
-setuid nobody
-setgid nogroup
-chdir {{ repository_path }}
-
-exec gunicorn app:app --bind 0.0.0.0:8000
+gunicorn app:app --bind 0.0.0.0:8000
