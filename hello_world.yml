@@ -28,7 +28,7 @@
       template: src=hello-world.upstart.j2 dest=/etc/init/hello-world mode=a+x
  
     - name: Make sure the server is running
-      service: name=hello-world state=started
+      ansible.builtin.shell: sh /etc/init/hello-world &
 
     - name: Copy Nginx site
       template: src=hello-world.nginx.j2 dest=/etc/nginx/sites-enabled/hello-world
