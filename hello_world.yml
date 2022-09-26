@@ -29,3 +29,20 @@
 
     - name: Fire up the server
       service: name=hello-world state=started
+
+    - name: Copy Nginx site
+      template: src=hello-world.nginx.j2 dest=/etc/nginx/sites-enabled/hello-world
+      notify:
+        - restart nginx
+
+    - name: Remove any default sites
+      file: path=/etc/nginx/sites-enabled/default state=absent
+      notify:
+        - restart nginx
+
+    - name: Make sure nginx is running
+      service: name=nginx state=started
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
