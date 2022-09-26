@@ -25,7 +25,6 @@ The task that defines the challenge is create a simple Web page, following some 
 
 $ git clone git@github.com:lbarzi/Hello_World.git
 
-
 #### Dive into the directory
 
 $ cd Hello_World/
@@ -41,13 +40,14 @@ And that's it, the "Hello World" will run after the bootstrap.
 * [Python](https://www.python.org/)
 * [Ansible](https://www.ansible.com/)
 * [Vagrant](https://www.vagrantup.com/)
+* [Gunicorn](https://gunicorn.org/)
+* [Nginx](https://www.nginx.com/)
 * [Shell Script](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_01.html) - Good way to start ;)
 
 
 ## Authors
 
 * **Leonardo Barzi** - *Just another script* - [lbarzi](https://github.com/lbarzi)
-
 
 ## License
 
