@@ -38,9 +38,9 @@ And that's it, the "Hello World" will run after the bootstrap.
 
 ## Built With
 
-* [Python] (https://www.python.org/)
-* [Ansible] (https://www.ansible.com/)
-* [Vagrant] (https://www.vagrantup.com/)
+* [Python](https://www.python.org/)
+* [Ansible](https://www.ansible.com/)
+* [Vagrant](https://www.vagrantup.com/)
 * [Shell Script](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_01.html) - Good way to start ;)
 
 
