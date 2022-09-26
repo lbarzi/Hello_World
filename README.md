@@ -46,7 +46,7 @@ And that's it, the "Hello World" will run after the bootstrap.
 
 ## Authors
 
-* **Leonardo Barzi** - *Just another script* - [leobarzi](https://bitbucket.org/leobarzi/)
+* **Leonardo Barzi** - *Just another script* - [lbarzi](https://github.com/lbarzi)
 
 
 ## License
