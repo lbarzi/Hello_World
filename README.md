@@ -1,10 +1,10 @@
 # Hello World Challenge
 
-Raylytic challenge which aims to run a "Hello, World!" web page in Linux
+Raylytic challenge - which aims to run a "Hello, World!" web page in Linux
 
 ## Getting Started
 
-Just a simple set of shell script to get things done (almot) quickly and easily.
+Just a simple set of shell script to get things done (almost) quickly and easily.
 
 ### Prerequisites
 
