@@ -17,7 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.define "ubuntu20.04" do |ubuntu|
         ubuntu.vm.hostname = "ubuntu20.04"
     end
-    config.vm.network "public_network",  bridge: "enp2s0"
+    config.vm.network "public_network",  bridge: "enp2s0", , ip: "192.168.178.252"
     config.vm.provision:shell, path: "bootstrap.sh"
     config.vm.provision "file", source: "~/.ssh/id_ed25519.pub", destination: "~/.ssh/id_ed25519.pub"
     config.vm.provision "file", source: "~/.ssh/id_ed25519", destination: "~/.ssh/id_ed25519"
