@@ -3,6 +3,6 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/tmp/hello_world.sock;
+        proxy_pass http://localhost:8000;
     }
 }
