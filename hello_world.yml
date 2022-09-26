@@ -23,3 +23,9 @@
 
     - name: Install requirements
       pip: requirements='{{ repository_path }}/requirements.txt'
+ 
+    - name: Copy Upstart configuration
+      template: src=hello-world.upstart.j2 dest=/etc/init/hello-world.conf
+
+    - name: Fire up the server
+      service: name=hello-world state=started
