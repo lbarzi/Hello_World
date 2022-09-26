@@ -22,27 +22,17 @@ The task that defines the challenge is create a simple Web page, following some 
 ### Installing
 
 #### Get the code
-
 ````
 $ git clone git@github.com:lbarzi/Hello_World.git
 ````
-
 #### Dive into the directory
-
-
 ````
 $ cd Hello_World/
-
 ````
-
 #### Fire up vagrant
-
-
 ````
 $ vagrant up
-
 ````
-
 And that's it, the "Hello World" will run after the bootstrap.
 
 ## Built With
