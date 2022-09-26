@@ -34,6 +34,7 @@ $ cd Hello_World/
 $ vagrant up
 ````
 And that's it, the "Hello World" will run after the bootstrap.
+> Note: in the Vagrant file the IP address was fixed for educational purpose :).
 
 ## Built With
 
