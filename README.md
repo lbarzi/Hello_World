@@ -1,6 +1,6 @@
 # Hello World Challenge
 
-Raylytic challenge - which aims to run a "Hello, World!" web page in Linux
+Old challenge - which aims to run a "Hello, World!" web page in Linux
 
 ## Getting Started
 
